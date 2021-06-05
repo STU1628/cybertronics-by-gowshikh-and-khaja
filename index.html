@@ -1,0 +1,307 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CYBERTRONICS</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background-color: #66FFFF;
+	padding: 0;
+	color: #000;
+	margin-bottom: 0;
+	margin-left: 0;
+	/* [disabled]margin-right: 0; */
+	margin-top: 0;
+	background-image: url();
+}
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing block. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the blocks, instead of the block elements themselves, gets rid of any box model math. A nested block with side padding can also be used as an alternate method. */
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #000000;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #FF0000;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+/* ~~ This fixed width container surrounds all other blocks ~~ */
+.container {
+	width: 960px;
+	background-color: #CCFFCC;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+}
+/* ~~ The header is not given a width. It will extend the full width of your layout. ~~ */
+header {
+	background-color: #FFFFFF;
+}
+/* ~~ These are the columns for the layout. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the block elements. The elements within these blocks have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the block itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the block element and place a second block element within it with no width and the padding necessary for your design.
+
+2) No margin has been given to the columns since they are all floated. If you must add margin, avoid placing it on the side you're floating toward (for example: a right margin on a block set to float right). Many times, padding can be used instead. For blocks where this rule must be broken, you should add a "display:inline" declaration to the block element's rule to tame a bug where some versions of Internet Explorer double the margin.
+
+3) Since classes can be used multiple times in a document (and an element can also have multiple classes applied), the columns have been assigned class names instead of IDs. For example, two sidebar blocks could be stacked if necessary. These can very easily be changed to IDs if that's your preference, as long as you'll only be using them once per document.
+
+4) If you prefer your nav on the left instead of the right, simply float these columns the opposite direction (all left instead of all right) and they'll render in reverse order. There's no need to move the blocks around in the HTML source.
+
+*/
+.sidebar1 {
+	float: right;
+	width: 180px;
+	background-color: #EADCAE;
+	padding-bottom: 10px;
+}
+.content {
+	padding: 10px 0;
+	width: 780px;
+	float: right;
+}
+
+/* ~~ This grouped selector gives the lists in the .content area space ~~ */
+.content ul, .content ol {
+	padding: 0 15px 15px 40px; /* this padding mirrors the right padding in the headings and paragraph rule above. Padding was placed on the bottom for space between other elements on the lists and on the left to create the indention. These may be adjusted as you wish. */
+}
+
+/* ~~ The navigation list styles (can be removed if you choose to use a premade flyout menu like Spry) ~~ */
+nav ul{
+	list-style: none; /* this removes the list marker */
+	border-top: 1px solid #666; /* this creates the top border for the links - all others are placed using a bottom border on the LI */
+	margin-bottom: 15px; /* this creates the space between the navigation on the content below */
+}
+nav li {
+	border-bottom: 1px solid #666; /* this creates the button separation */
+}
+nav a, nav a:visited { /* grouping these selectors makes sure that your links retain their button look even after being visited */
+	padding: 5px 5px 5px 15px;
+	display: block; /* this gives the link block properties causing it to fill the whole LI containing it. This causes the entire area to react to a mouse click. */
+	width: 160px;  /*this width makes the entire button clickable for IE6. If you don't need to support IE6, it can be removed. Calculate the proper width by subtracting the padding on this link from the width of your sidebar container. */
+	text-decoration: none;
+	background-color: #C6D580;
+}
+nav a:hover, nav a:active, nav a:focus { /* this changes the background and text color for both mouse and keyboard navigators */
+	background-color: #ADB96E;
+	color: #FFF;
+}
+
+/* ~~ The footer ~~ */
+footer {
+	padding: 10px 0;
+	background-color: #CCC49F;
+	position: relative;/* this gives IE6 hasLayout to properly clear */
+	clear: both; /* this clear property forces the .container to understand where the columns end and contain them */
+}
+
+/*HTML 5 support - Sets new HTML 5 tags to display:block so browsers know how to render the tags properly. */
+header, section, footer, aside, article, figure {
+	display: block;
+}
+a {
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+}
+-->
+</style><!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]--></head>
+
+<body>
+<div class="container">
+  <header>
+    <h2 align="center"><strong><em>Eco friendly goods and sustainable products.</em></strong>  </h2>
+  </header>
+  <header class="container"></header>
+  <header> </header>
+  <div class="sidebar1">
+    <nav>
+      <ul>
+        <li>
+          <div align="center"><a href="https://en.wikipedia.org/wiki/Environmentally_friendly" tabindex="MORE " title="MORE INFO">MORE INFO</a><a href="https://kinilly.com/" title="OUR SUGGESTION FOR SHOPPING ONLINE">SHOP*</a></div>
+        </li>
+      </ul>
+    </nav>
+    <aside>
+      <h3 align="center"><!-- end .sidebar1 -->WELCOME</h3>
+      <p align="center">* The above mentioned shop is just for content in case of any problems the creator can't take responsible of that...    </p>
+    </aside>
+  </div>
+  <article class="content">
+    <p><img src="nature.jpg" width="754" height="293"  alt=""/></p>
+    <div class="container"></div>
+    <section>
+      <h2 align="center"><span data-contrast="none" xml:lang="EN-US" lang="EN-US">What does Eco-Friendly Mean?</span><span data-ccp-props="{'201341983':2,'335559739':72,'335559740':276}"> </span></h2>
+      <p align="center"><span data-contrast="none" xml:lang="EN-US" lang="EN-US">When a product uses the label of eco-friendly it is meant to communicate that the product can be used without harm to the environment. However, just because a product is labeled as eco-friendly doesn't mean it's 100% eco-friendly in every single way.</span>  <img src="Eco friendly.jpg"  alt="" width="111" height="545" class="content"/></p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+    </section>
+    <section>
+      <h2><span data-contrast="none" xml:lang="EN-US" lang="EN-US">What does Sustainability mean ?</span><span data-ccp-props="{'201341983':0,'335559739':160,'335559740':259}"> </span></h2>
+      <p><span data-contrast="none" xml:lang="EN-US" lang="EN-US">Sustainability means</span><span data-contrast="none" xml:lang="EN-US" lang="EN-US"> meeting our own needs without compromising the ability of future generations to meet their own needs. In addition to natural resources, we also need social and economic resources. </span><span data-contrast="none" xml:lang="EN-US" lang="EN-US">Sustainability</span><span data-contrast="none" xml:lang="EN-US" lang="EN-US"> is not just environmentalism.</span><span data-ccp-props="{'201341983':0,'335559739':160,'335559740':259}"> </span></p>
+      <p><img src="sustainable.jpg" width="757" height="369"  alt=""/></p>
+      <p>&nbsp;</p>
+    </section>
+    <section> </section>
+    <section>
+      <div>
+        <h1 paraid="1761647666" paraeid="{1e8337ab-9ff1-4746-9e2a-a737d68d4d87}{188}"><span data-contrast="none" xml:lang="EN-US" lang="EN-US">Eco Friendly Products</span><span data-ccp-props="{'134233117':true,'134233118':true,'201341983':0,'335559739':160,'335559740':240}"> </span></h1>
+      </div>
+      <div>
+        <p paraid="624833757" paraeid="{1e8337ab-9ff1-4746-9e2a-a737d68d4d87}{194}"><span data-contrast="none" xml:lang="EN-US" lang="EN-US">Eco</span><span data-contrast="none" xml:lang="EN-US" lang="EN-US">-</span><span data-contrast="none" xml:lang="EN-US" lang="EN-US">friendly products</span><span data-contrast="none" xml:lang="EN-US" lang="EN-US"> are &ldquo;</span><span data-contrast="none" xml:lang="EN-US" lang="EN-US">products</span><span data-contrast="none" xml:lang="EN-US" lang="EN-US"> that do not harm the </span><span data-contrast="none" xml:lang="EN-US" lang="EN-US">environment</span><span data-contrast="none" xml:lang="EN-US" lang="EN-US"> whether in their production, use or disposal&rdquo;. In other words, these </span><span data-contrast="none" xml:lang="EN-US" lang="EN-US">products</span><span data-contrast="none" xml:lang="EN-US" lang="EN-US"> help preserve the </span><span data-contrast="none" xml:lang="EN-US" lang="EN-US">environment</span><span data-contrast="none" xml:lang="EN-US" lang="EN-US"> by significantly reducing the pollution produced</span><span data-ccp-props="{'201341983':0,'335559739':160,'335559740':259}"> </span></p>
+      </div>
+      <div>
+        <p paraid="13257579" paraeid="{1e8337ab-9ff1-4746-9e2a-a737d68d4d87}{226}"><span data-contrast="none" xml:lang="EN-US" lang="EN-US">There are many ways to reduce the environmental pollution that stems from your home simply by choosing eco friendly products.</span><span data-ccp-props="{'201341983':0,'335559739':160,'335559740':259}"> </span></p>
+      </div>
+      <div>
+        <div>
+          <ul role="list">
+            <li data-leveltext="" data-font="Symbol" data-listid="1" aria-setsize="-1" data-aria-posinset="1" role="listitem" data-aria-level="1">
+              <p paraid="1807481113" paraeid="{1e8337ab-9ff1-4746-9e2a-a737d68d4d87}{236}"><span data-contrast="none" xml:lang="EN-US" lang="EN-US">Certified Compostable Bin Liners. ...</span><span data-ccp-props="{'201341983':0,'335559685':0,'335559739':60,'335559740':240}"> </span></p>
+            </li>
+            <li data-leveltext="" data-font="Symbol" data-listid="1" aria-setsize="-1" data-aria-posinset="2" role="listitem" data-aria-level="1">
+              <p paraid="1852264850" paraeid="{1e8337ab-9ff1-4746-9e2a-a737d68d4d87}{243}"><span data-contrast="none" xml:lang="EN-US" lang="EN-US">Recycled Plastic Toothbrush. </span><span data-ccp-props="{'201341983':0,'335559685':0,'335559739':60,'335559740':240}"> </span></p>
+            </li>
+            <li data-leveltext="" data-font="Symbol" data-listid="1" aria-setsize="-1" data-aria-posinset="3" role="listitem" data-aria-level="1">
+              <p paraid="136480610" paraeid="{1e8337ab-9ff1-4746-9e2a-a737d68d4d87}{250}"><span data-contrast="none" xml:lang="EN-US" lang="EN-US">Reusable Bulk Food Bags</span><span data-ccp-props="{'201341983':0,'335559685':0,'335559739':60,'335559740':240}"> </span></p>
+            </li>
+            <li data-leveltext="" data-font="Symbol" data-listid="1" aria-setsize="-1" data-aria-posinset="4" role="listitem" data-aria-level="1">
+              <p paraid="2132206172" paraeid="{8990b554-08c7-4d4c-b03c-ea85ff33d3f2}{2}"><span data-contrast="none" xml:lang="EN-US" lang="EN-US">Reusable shopping Bags</span><span data-ccp-props="{'201341983':0,'335559685':0,'335559739':60,'335559740':240}"> </span></p>
+            </li>
+            <li data-leveltext="" data-font="Symbol" data-listid="1" aria-setsize="-1" data-aria-posinset="5" role="listitem" data-aria-level="1">
+              <p paraid="220478867" paraeid="{8990b554-08c7-4d4c-b03c-ea85ff33d3f2}{9}"><span data-contrast="none" xml:lang="EN-US" lang="EN-US">Eco Friendly Phone Cases</span><span data-ccp-props="{'201341983':0,'335559685':0,'335559739':60,'335559740':240}"> </span></p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <div>
+          <ul role="list">
+            <li data-leveltext="" data-font="Symbol" data-listid="1" aria-setsize="-1" data-aria-posinset="1" role="listitem" data-aria-level="1">
+              <p paraid="1113256535" paraeid="{8990b554-08c7-4d4c-b03c-ea85ff33d3f2}{16}"><span data-contrast="none" xml:lang="EN-US" lang="EN-US">Recycled Plastic Belts</span><span data-ccp-props="{'201341983':0,'335559685':0,'335559739':60,'335559740':240}"> </span></p>
+            </li>
+            <li data-leveltext="" data-font="Symbol" data-listid="1" aria-setsize="-1" data-aria-posinset="2" role="listitem" data-aria-level="1">
+              <p paraid="907003763" paraeid="{8990b554-08c7-4d4c-b03c-ea85ff33d3f2}{23}"><span data-contrast="none" xml:lang="EN-US" lang="EN-US">Recycled Plastic Rugs. ...</span><span data-ccp-props="{'201341983':0,'335559685':0,'335559739':60,'335559740':240}"> </span></p>
+            </li>
+            <li data-leveltext="" data-font="Symbol" data-listid="1" aria-setsize="-1" data-aria-posinset="3" role="listitem" data-aria-level="1">
+              <p paraid="375614063" paraeid="{8990b554-08c7-4d4c-b03c-ea85ff33d3f2}{30}"><span data-contrast="none" xml:lang="EN-US" lang="EN-US">Ballpoint Pens Made From Recycled Water Bottles.</span><span data-ccp-props="{'201341983':0,'335559685':0,'335559739':60,'335559740':240}"> </span></p>
+            </li>
+            <li data-leveltext="" data-font="Symbol" data-listid="1" aria-setsize="-1" data-aria-posinset="4" role="listitem" data-aria-level="1">
+              <p paraid="2124714369" paraeid="{8990b554-08c7-4d4c-b03c-ea85ff33d3f2}{41}"><span data-contrast="none" xml:lang="EN-US" lang="EN-US">Recycled Plastic Mat for Yoga and Beach</span><span data-ccp-props="{'201341983':0,'335559685':0,'335559739':60,'335559740':240}"> </span></p>
+            </li>
+            <li data-leveltext="" data-font="Symbol" data-listid="1" aria-setsize="-1" data-aria-posinset="5" role="listitem" data-aria-level="1">
+              <p paraid="1120760586" paraeid="{8990b554-08c7-4d4c-b03c-ea85ff33d3f2}{48}"><span data-contrast="none" xml:lang="EN-US" lang="EN-US">Etc …….</span><span data-ccp-props="{'201341983':0,'335559685':0,'335559739':60,'335559740':240}"> </span></p>
+            </li>
+          </ul>
+          <p><img src="ecofriendlt.png" width="674" height="328"  alt=""/></p>
+          <p><img src="eco.png"  alt="" width="746" height="889" border="0"/></p>
+          <p>&nbsp;</p>
+        </div>
+      </div>
+      <div>
+        <h2 paraid="1567942474" paraeid="{8990b554-08c7-4d4c-b03c-ea85ff33d3f2}{91}"><span data-contrast="none" xml:lang="EN-US" lang="EN-US">What is Sustainable Products ?</span><span data-ccp-props="{'201341983':0,'335559739':160,'335559740':259}"> </span></h2>
+      </div>
+      <div>
+        <div>
+          <p paraid="1458846394" paraeid="{8990b554-08c7-4d4c-b03c-ea85ff33d3f2}{99}">&nbsp;</p>
+        </div>
+        <div>
+          <p paraid="1718960528" paraeid="{8990b554-08c7-4d4c-b03c-ea85ff33d3f2}{103}"><span data-contrast="auto" xml:lang="EN-US" lang="EN-US"> </span><a href="https://en.wikipedia.org/wiki/Sustainability" target="_blank" rel="noreferrer noopener"><span data-contrast="none" xml:lang="EN-US" lang="EN-US"><span data-ccp-charstyle="Hyperlink">Sustainable</span></span></a><span data-contrast="none" xml:lang="EN-US" lang="EN-US"> products</span><span data-contrast="none" xml:lang="EN-US" lang="EN-US"> are those products that provide environmental, social and economic benefits while protecting </span><a href="https://en.wikipedia.org/wiki/Public_health" target="_blank" rel="noreferrer noopener"><span data-contrast="none" xml:lang="EN-US" lang="EN-US"><span data-ccp-charstyle="Hyperlink">public health</span></span></a><span data-contrast="none" xml:lang="EN-US" lang="EN-US"> and </span><a href="https://en.wikipedia.org/wiki/Natural_environment" target="_blank" rel="noreferrer noopener"><span data-contrast="none" xml:lang="EN-US" lang="EN-US"><span data-ccp-charstyle="Hyperlink">environment</span></span></a><span data-contrast="none" xml:lang="EN-US" lang="EN-US"> over their whole life cycle, from the extraction of </span><a href="https://en.wikipedia.org/wiki/Raw_material" target="_blank" rel="noreferrer noopener"><span data-contrast="none" xml:lang="EN-US" lang="EN-US"><span data-ccp-charstyle="Hyperlink">raw materials</span></span></a><span data-contrast="none" xml:lang="EN-US" lang="EN-US"> until the final disposal.</span><span data-ccp-props="{'201341983':0,'335559739':160,'335559740':259}"> </span></p>
+        </div>
+        <div>
+          <p paraid="780251924" paraeid="{8990b554-08c7-4d4c-b03c-ea85ff33d3f2}{129}">&nbsp;</p>
+        </div>
+        <div>
+          <p paraid="397201288" paraeid="{8990b554-08c7-4d4c-b03c-ea85ff33d3f2}{133}"><span data-contrast="none" xml:lang="EN-US" lang="EN-US">The Examples of Sustainable products are :</span><span data-ccp-props="{'201341983':0,'335559739':160,'335559740':259}"> </span></p>
+        </div>
+        <div>
+          <ul role="list">
+            <li data-leveltext="" data-font="Symbol" data-listid="2" aria-setsize="-1" data-aria-posinset="1" role="listitem" data-aria-level="1">
+              <p paraid="1445263481" paraeid="{8990b554-08c7-4d4c-b03c-ea85ff33d3f2}{141}"><span data-contrast="none" xml:lang="EN-US" lang="EN-US"><span data-ccp-parastyle="trt0xe" data-ccp-parastyle-defn="{'ObjectId':'ec28906e-67a4-4345-a1b1-49c9e17dbf62|28','ClassId':1073872969,'Properties':[134233117,'true',134233118,'true',134233614,'true',201340122,'2',201341983,'0',268442635,'24',335559740,'240',469769226,'Times New Roman',469775450,'trt0xe',469777841,'Times New Roman',469777842,'Times New Roman',469777843,'Times New Roman',469777844,'Times New Roman',469778129,'trt0xe',469778324,'Normal']}">Reusable Lunch Wraps. ...</span></span><span data-ccp-props="{'134233117':true,'134233118':true,'201341983':0,'335559685':0,'335559739':60,'335559740':240}"> </span></p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <div>
+          <ul role="list">
+            <li data-leveltext="" data-font="Symbol" data-listid="2" aria-setsize="-1" data-aria-posinset="1" role="listitem" data-aria-level="1">
+              <p paraid="1667047752" paraeid="{8990b554-08c7-4d4c-b03c-ea85ff33d3f2}{148}"><span data-contrast="none" xml:lang="EN-US" lang="EN-US"><span data-ccp-parastyle="trt0xe">Recycled and Recyclable Cutlery. ...</span></span><span data-ccp-props="{'134233117':true,'134233118':true,'201341983':0,'335559685':0,'335559739':60,'335559740':240}"> </span></p>
+            </li>
+            <li data-leveltext="" data-font="Symbol" data-listid="2" aria-setsize="-1" data-aria-posinset="2" role="listitem" data-aria-level="1">
+              <p paraid="114471810" paraeid="{8990b554-08c7-4d4c-b03c-ea85ff33d3f2}{155}"><span data-contrast="none" xml:lang="EN-US" lang="EN-US"><span data-ccp-parastyle="trt0xe">Vortex's Rechargeable Crank Flashlight. ...</span></span><span data-ccp-props="{'134233117':true,'134233118':true,'201341983':0,'335559685':0,'335559739':60,'335559740':240}"> </span></p>
+            </li>
+            <li data-leveltext="" data-font="Symbol" data-listid="2" aria-setsize="-1" data-aria-posinset="3" role="listitem" data-aria-level="1">
+              <p paraid="1547511901" paraeid="{8990b554-08c7-4d4c-b03c-ea85ff33d3f2}{162}"><span data-contrast="none" xml:lang="EN-US" lang="EN-US"><span data-ccp-parastyle="trt0xe">Compostable Party Plates. ...</span></span><span data-ccp-props="{'134233117':true,'134233118':true,'201341983':0,'335559685':0,'335559739':60,'335559740':240}"> </span></p>
+            </li>
+            <li data-leveltext="" data-font="Symbol" data-listid="2" aria-setsize="-1" data-aria-posinset="4" role="listitem" data-aria-level="1">
+              <p paraid="826434325" paraeid="{8990b554-08c7-4d4c-b03c-ea85ff33d3f2}{169}"><span data-contrast="none" xml:lang="EN-US" lang="EN-US"><span data-ccp-parastyle="trt0xe">Compostable Bowls. ...</span></span><span data-ccp-props="{'134233117':true,'134233118':true,'201341983':0,'335559685':0,'335559739':60,'335559740':240}"> </span></p>
+            </li>
+            <li data-leveltext="" data-font="Symbol" data-listid="2" aria-setsize="-1" data-aria-posinset="5" role="listitem" data-aria-level="1">
+              <p paraid="1524628138" paraeid="{8990b554-08c7-4d4c-b03c-ea85ff33d3f2}{176}"><span data-contrast="none" xml:lang="EN-US" lang="EN-US"><span data-ccp-parastyle="trt0xe">Travel Pouch Made </span><span data-ccp-parastyle="trt0xe">From</span><span data-ccp-parastyle="trt0xe"> Recycled Bike Tubes. ...</span></span><span data-ccp-props="{'134233117':true,'134233118':true,'201341983':0,'335559685':0,'335559739':60,'335559740':240}"> </span></p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <div>
+          <ul role="list">
+            <li data-leveltext="" data-font="Symbol" data-listid="2" aria-setsize="-1" data-aria-posinset="1" role="listitem" data-aria-level="1">
+              <p paraid="1570776070" paraeid="{8990b554-08c7-4d4c-b03c-ea85ff33d3f2}{187}"><span data-contrast="none" xml:lang="EN-US" lang="EN-US"><span data-ccp-parastyle="trt0xe">Sustainable</span></span><span data-contrast="none" xml:lang="EN-US" lang="EN-US"><span data-ccp-parastyle="trt0xe"> Travel Towels.</span></span></p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section>
+      <p><img src="sustainable products.jpg" width="759" height="445"  alt=""/></p>
+    </section>
+    <section> </section>
+    <section> </section>
+    <section>
+      <div>
+        <h2 role="heading" aria-level="1" paraid="2044245906" paraeid="{8990b554-08c7-4d4c-b03c-ea85ff33d3f2}{207}"><span data-contrast="none" xml:lang="EN-US" lang="EN-US"><span data-ccp-parastyle="heading 1">What Is the Difference Between Eco Friendly and Sustainable?</span></span><span data-ccp-props="{'201341983':2,'335559738':240,'335559739':0,'335559740':300}"> </span></h2>
+      </div>
+      <div>
+        <p paraid="310175824" paraeid="{8990b554-08c7-4d4c-b03c-ea85ff33d3f2}{213}">&nbsp;</p>
+      </div>
+      <div>
+        <p paraid="1447196036" paraeid="{8990b554-08c7-4d4c-b03c-ea85ff33d3f2}{217}"><span data-contrast="none" xml:lang="EN-US" lang="EN-US"><span data-ccp-parastyle="Normal (Web)">It&rsquo;s not unusual for people to interchange the words </span></span><span data-contrast="none" xml:lang="EN-US" lang="EN-US"><span data-ccp-charstyle="Emphasis">eco-friendly</span></span><span data-contrast="none" xml:lang="EN-US" lang="EN-US"><span data-ccp-parastyle="Normal (Web)"> and </span></span><span data-contrast="none" xml:lang="EN-US" lang="EN-US"><span data-ccp-charstyle="Emphasis">sustainable</span></span><span data-contrast="none" xml:lang="EN-US" lang="EN-US"><span data-ccp-parastyle="Normal (Web)">. In most cases, you wouldn&rsquo;t even be making a mistake because both these terms focus on social responsibility and environmental awareness. If we were to get into the nitty-gritty of each subject, you would realize that they do, in fact, have significant dissimilarities that are important to put out there.</span></span><span data-ccp-props="{'134233117':true,'134233118':true,'201341983':2,'335559740':348}"> </span></p>
+      </div>
+      <div>
+        <p paraid="1268901084" paraeid="{8990b554-08c7-4d4c-b03c-ea85ff33d3f2}{231}"><span data-contrast="none" xml:lang="EN-US" lang="EN-US"><span data-ccp-parastyle="Normal (Web)"> </span></span><span data-ccp-props="{'134233117':true,'134233118':true,'201341983':2,'335559740':348}"> </span></p>
+      </div>
+      <div>
+        <p paraid="1254899953" paraeid="{8990b554-08c7-4d4c-b03c-ea85ff33d3f2}{235}"><span data-contrast="none" xml:lang="EN-US" lang="EN-US"><span data-ccp-parastyle="Normal (Web)">Eco</span></span><span data-contrast="none" xml:lang="EN-US" lang="EN-US"><span data-ccp-parastyle="Normal (Web)">-</span></span><span data-contrast="none" xml:lang="EN-US" lang="EN-US"><span data-ccp-parastyle="Normal (Web)">friendly</span></span><span data-contrast="none" xml:lang="EN-US" lang="EN-US"><span data-ccp-parastyle="Normal (Web)"> isn't quite so broad. It means that something doesn't harm the planet. But </span></span><span data-contrast="none" xml:lang="EN-US" lang="EN-US"><span data-ccp-parastyle="Normal (Web)">sustainable</span></span><span data-contrast="none" xml:lang="EN-US" lang="EN-US"><span data-ccp-parastyle="Normal (Web)"> is the most precisely defined term here and represents the wide scope </span></span><span data-contrast="none" xml:lang="EN-US" lang="EN-US"><span data-ccp-parastyle="Normal (Web)">of</span></span><span data-contrast="none" xml:lang="EN-US" lang="EN-US"><span data-ccp-parastyle="Normal (Web)"> issues and activities</span></span><span data-ccp-props="{'134233117':true,'134233118':true,'201341983':2,'335559740':348}"> </span></p>
+      </div>
+      <div>
+        <p paraid="1355785241" paraeid="{8990b554-08c7-4d4c-b03c-ea85ff33d3f2}{255}"><span data-contrast="none" xml:lang="EN-US" lang="EN-US"><span data-ccp-parastyle="Normal (Web)"> </span></span><span data-ccp-props="{'134233117':true,'134233118':true,'201341983':2,'335559740':348}"> </span></p>
+      </div>
+      <div>
+        <p paraid="1319314641" paraeid="{4ee9e16d-f4d0-4cda-b7a5-d90f456daf15}{4}"><span data-contrast="none" xml:lang="EN-US" lang="EN-US"><span data-ccp-parastyle="Normal (Web)">Let&rsquo;s steer you away from muddled territory by offering some guidelines on how to differentiate these two closely-related green </span><span data-ccp-parastyle="Normal (Web)">terms. While we&rsquo;re at it, we&rsquo;ll also cover the relationship between the words </span></span><span data-contrast="none" xml:lang="EN-US" lang="EN-US"><span data-ccp-charstyle="Emphasis">clean</span></span><span data-contrast="none" xml:lang="EN-US" lang="EN-US"><span data-ccp-parastyle="Normal (Web)"> and </span></span><span data-contrast="none" xml:lang="EN-US" lang="EN-US"><span data-ccp-charstyle="Emphasis">non-toxic</span></span><span data-contrast="none" xml:lang="EN-US" lang="EN-US"><span data-ccp-parastyle="Normal (Web)">, </span></span><span data-contrast="none" xml:lang="EN-US" lang="EN-US"><span data-ccp-charstyle="Emphasis">conscious</span></span><span data-contrast="none" xml:lang="EN-US" lang="EN-US"><span data-ccp-parastyle="Normal (Web)"> and </span></span><span data-contrast="none" xml:lang="EN-US" lang="EN-US"><span data-ccp-charstyle="Emphasis">thoughtful</span></span><span data-contrast="none" xml:lang="EN-US" lang="EN-US"><span data-ccp-parastyle="Normal (Web)">, and </span></span><span data-contrast="none" xml:lang="EN-US" lang="EN-US"><span data-ccp-charstyle="Emphasis">ethical</span></span><span data-contrast="none" xml:lang="EN-US" lang="EN-US"><span data-ccp-parastyle="Normal (Web)"> and </span></span><span data-contrast="none" xml:lang="EN-US" lang="EN-US"><span data-ccp-charstyle="Emphasis">fair trade</span></span><span data-contrast="none" xml:lang="EN-US" lang="EN-US"><span data-ccp-parastyle="Normal (Web)"> to help you make wiser product purchases in the future.</span></span><span data-ccp-props="{'134233117':true,'134233118':true,'201341983':2,'335559740':348}"> </span></p>
+      </div>
+      <h2><img src="THREE R.jpg" width="770" height="198"  alt=""/></h2>
+    </section>
+<!-- end .content -->
+  </article>
+  <footer>
+    <p>This website was designed by Gowshikh and Khaja for Cybertronics 2021 conducted by DPS Monarch international school.</p>
+  </footer>
+
+  <!-- end .container -->
+</div>
+</body>
+</html>
